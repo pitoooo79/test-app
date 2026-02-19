@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <style>
+    :root {
+      --bg: #02030a;
+      --neon-blue: #39d5ff;
+      --neon-blue-strong: #00a2ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 50% 45%, #0b1630 0%, #050910 35%, #02030a 70%);
+      font-family: "Consolas", "Courier New", monospace;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--neon-blue);
+      font-size: clamp(2.2rem, 9vw, 6rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 8px var(--neon-blue),
+        0 0 18px var(--neon-blue),
+        0 0 38px var(--neon-blue-strong),
+        0 0 72px color-mix(in srgb, var(--neon-blue-strong) 78%, white 22%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello world!</h1>
+</body>
+</html>
+
+
